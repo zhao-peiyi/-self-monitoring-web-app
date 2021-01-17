@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %>
+<h1 class="day">Login</h1>
+<form class="login day" method="POST">
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username" value="<%= username %>">
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" value="<%= password %>">
+    <% if(note) { %>
+      <p class="note"><%= note %></p>
+    <% } %>
+    <input type="submit" value="login" class="day btn">
+</form>
+<%- include('./partials/footer.ejs') %>

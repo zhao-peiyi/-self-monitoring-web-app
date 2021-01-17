@@ -1,1 +1,21 @@
  CREATE TABLE statements
+
+ CREATE TABLE users {
+    id SERIAL NOT NULL
+
+ }
+
+ path
+/
+/login
+/register
+/profile??
+
+CREATE UNIQUE INDEX ON users((lower(email)));
+
+ALTER TABLE accounts ALTER COLUMN balance SET DEFAULT 0;
+
+1.land、sql、login、register、index
+后面要用上d3.js展示图表
+可以用渐变色做背景??还是不要用（最好统一一下）
+灰色-橙色-蓝色

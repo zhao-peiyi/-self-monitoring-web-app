@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+<h1 class="day">Login</h1>
+<form class="register day" method="POST">
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username" value="<%= username %>">
+    <label for="password1">password:</label>
+    <input type="password" id="password1" name="password1" value="<%= password1 %>">
+    <label for="password2">password:</label>
+    <input type="password" id="password2" name="password2" value="<%= password2 %>">
+    <label for="invitation">invitation code:</label>
+    <input type="text" id="invitation" name="invitation" value="<%= invitation %>">
+    <% if(note) { %>
+      <p class="note"><%= note %></p>
+    <% } %>
+    <input type="submit" value="register" class="day btn">
+</form>
+<%- include('./partials/footer.ejs') %>
